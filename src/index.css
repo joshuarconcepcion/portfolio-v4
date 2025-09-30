@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  html, body {
+    @apply h-full w-full flex flex-col;
+    font-family: 'Eurostile', system-ui, sans-serif;
+    cursor: url('../assets/cursor.png'), auto;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  a:hover {
+    cursor: url('../assets/hoverCursor.png'), auto;
+  }
+}
+
+@theme {
+  --font-default: 'Eurostile';
+  --color-off-white: rgb(220, 220, 220);
+  --color-main-black: rgb(30, 30, 30);
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url('./assets/fonts/fonnts.com-Eurostile_Cond.otf');
+}
