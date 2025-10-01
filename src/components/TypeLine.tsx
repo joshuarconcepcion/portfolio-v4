@@ -38,7 +38,7 @@ function TypeLine({
             canceled = true;
         };
         
-    }, [text, speed]);
+    }, [text]);
 
     const isRight = align === 'right';
     
@@ -48,7 +48,7 @@ function TypeLine({
                 <img src = {imgSrc} className='aspect-square h-[50px]' />
             )}
 
-            <h1 className='text-[clamp(1.125rem,3.2vw,1.25rem)] '>{display}</h1>
+            <h1 className='text-[clamp(1.125rem,3.2vw,1.25rem)] leading-7'>{display}</h1>
 
             {isRight && (
                 <img src = {imgSrc} className='aspect-square h-[50px]' />

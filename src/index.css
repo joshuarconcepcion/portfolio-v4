@@ -15,7 +15,7 @@
     @apply no-underline;
   }
 
-  a:hover {
+  a:hover, button:hover {
     cursor: url('./assets/hoverCursor.png'), auto;
   }
 }
