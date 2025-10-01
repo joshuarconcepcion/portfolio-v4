@@ -1,17 +1,16 @@
-import Profile from './components/profile'
+import type { JSX } from 'react'
+import Profile from './components/Profile'
+import Chat from './components/Chat'
 
-function App() {
+function App(): JSX.Element {
   return (
-      <div className='lg:grid lg:grid-cols-[3fr_1fr] lg:h-screen md:flex md:flex-col md:h-full w-screen'>
-        <div className='flex bg-off-white'>
+      <div className='w-screen h-full lg:h-screen grid grid-cols-1 lg:grid-cols-[3fr_1fr]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 bg-off-white'>
           <Profile />
-          <div className='flex flex-col w-full'>
-
-          </div>
+          <Chat />
         </div>
 
-        <div className='flex flex-col w-full bg-main-black'>
-        </div>
+        <div className='flex flex-col w-full bg-main-black'></div>
       </div>
   )
 }
