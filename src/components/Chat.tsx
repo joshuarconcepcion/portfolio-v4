@@ -10,16 +10,16 @@ function Chat(): JSX.Element {
     `from San Diego developing my skills and building projects ` +
     `in web development. What can I do for you?"`;
 
+    const currentWork = ` "I’m currently building projects in frontend ` +
+    `web development while deepening my skills in cybersecurity ` +
+    `and digital forensics. It’s a mix of creative coding and ` +
+    `technical problem solving.”`;
+
     const learnMore = ` "When I'm not coding, you can usually find me ` +
     `cafe hopping, exploring the city with my cats, ` +
     `or rewatching old cowboy movies. This space is a growing archive ` +
     `of the projects I’ve built and the ideas I’m exploring ` +
     `in development."`;
-
-    const currentWork = ` "I’m currently building projects in frontend ` +
-    `web development while deepening my skills in cybersecurity ` +
-    `and digital forensics. It’s a mix of creative coding and ` +
-    `technical problem solving.”`;
 
     const funFact = ` "Fun fact: I’ve traveled to Taiwan multiple times ` +
     `and plan to move there eventually! ` +
@@ -76,7 +76,7 @@ function Chat(): JSX.Element {
 
             {step >= 2 && (
                 <TypeLine
-                text = {learnMore}
+                text = {currentWork}
                 imgSrc = {iconP1}
                 align = 'left'
                 speed = {10}
@@ -86,7 +86,7 @@ function Chat(): JSX.Element {
 
             {step >= 3 && (
                 <TypeLine
-                text = {currentWork}
+                text = {learnMore}
                 imgSrc = {iconP1}
                 align = 'left'
                 speed = {10}
