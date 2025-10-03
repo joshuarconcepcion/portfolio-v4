@@ -1,6 +1,7 @@
 import type { JSX } from 'react'
 import Profile from './components/Profile'
 import Chat from './components/Chat'
+import Projects from './components/Projects'
 
 function App(): JSX.Element {
   return (
@@ -10,7 +11,9 @@ function App(): JSX.Element {
           <Chat />
         </div>
 
-        <div className='flex flex-col w-full bg-main-black'></div>
+        <div className='flex flex-col w-full h-full bg-main-black'>
+          <Projects />
+        </div>
       </div>
   )
 }

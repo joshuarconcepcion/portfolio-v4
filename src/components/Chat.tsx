@@ -6,20 +6,18 @@ import iconP2 from '../assets/iconP2.png'
 function Chat(): JSX.Element {
     const [step, setStep] = useState<0 | 1 | 2 | 3 | 4>(0);
 
-    const intro = ` "Hey, I'm Joshua, a frontend developer ` +
-    `from San Diego developing my skills and building projects ` +
-    `in web development. What can I do for you?"`;
+    const intro = ` "Hi, I’m Joshua, a frontend developer based in San Diego. ` +
+    `I build clean, responsive websites and I’m always sharpening my skills through new projects. ` +
+    `Got something in mind? Let’s make it happen!"`;
 
-    const currentWork = ` "I’m currently building projects in frontend ` +
-    `web development while deepening my skills in cybersecurity ` +
-    `and digital forensics. It’s a mix of creative coding and ` +
-    `technical problem solving.”`;
+    const currentWork = ` "Right now, I'm focused on frontend development and learning the full stack. ` +
+    `I'm building real-world projects, and currently working on a website for a client in the events space. ` +
+    `For me, it's all about turning ideas into clean, functional web experiences. `;
 
-    const learnMore = ` "When I'm not coding, you can usually find me ` +
-    `cafe hopping, exploring the city with my cats, ` +
-    `or rewatching old cowboy movies. This space is a growing archive ` +
-    `of the projects I’ve built and the ideas I’m exploring ` +
-    `in development."`;
+    const learnMore = ` "When I’m not coding, I’m probably cafe  ` +
+    `hopping, exploring the city with my cats, or rewatching old cowboy movies.` +
+    `This site is my corner of the web. Part portfolio, part sandbox, this is where ` + 
+    `I share the projects I’m building and the ideas I’m working through as I grow in web development.`;
 
     const funFact = ` "Fun fact: I’ve traveled to Taiwan multiple times ` +
     `and plan to move there eventually! ` +
@@ -42,7 +40,7 @@ function Chat(): JSX.Element {
             className={[
                 "flex flex-col w-full h-screen font-bold",
                 "pt-4 gap-6 px-6",
-                "md:pt-20 md:pr-16 md:pl-0 md:gap-12",
+                "md:pt-20 md:pr-16 md:pl-0 md:gap-8",
                 isFullscreen ? "min-h-[100svh] md:min-h-0 overflow-auto" : "",
             ].join(" ")}
         >
