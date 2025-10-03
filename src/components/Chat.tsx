@@ -6,7 +6,7 @@ import iconP2 from '../assets/iconP2.png'
 function Chat(): JSX.Element {
     const [step, setStep] = useState<0 | 1 | 2 | 3 | 4>(0);
 
-    const intro = ` "Hey, I'm Joshua, a computer science graduate ` +
+    const intro = ` "Hey, I'm Joshua, a frontend developer ` +
     `from San Diego developing my skills and building projects ` +
     `in web development. What can I do for you?"`;
 
